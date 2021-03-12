@@ -2,11 +2,11 @@ version: '3.1'
 
 services:
   springboot:
-    image: dockerhandson/spring-boot-mongo:latest
+    image: nunnarajesh/spring-boot-mongo-docker1:latest
     restart: always
     container_name: springboot
     ports:
-      - 9090:8080
+      - 8080:8080
     working_dir: /opt/app
     depends_on:
       - mongo
